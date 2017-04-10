@@ -1,3 +1,4 @@
+
 function inicializaTabuleiro()
 	tabuleiro = {{" "," "," "},{" "," "," "},{" "," "," "}}
 	vezDe = "O"
@@ -121,12 +122,3 @@ function partida()
 		
 	until(fimJogo())
 end
-
-repeat
-partida()
-
-print("Jogar novamente?\n 1 - SIM , 2 - Não")
-
-local novoJogo = io.read("*number")
-
-until(novoJogo == "2")
